@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: aliceblue;
+    height: 600px;
+    width: 600px;
+}
+
+.box1 {
+    background: lightcoral;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: sqanimation;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+.box2 {
+    background: lightblue; 
+    width: 100px;
+    height: 100px;
+    position: absolute; 
+    top: 0;
+    right:0;
+    animation-name: sqanimation2;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+.box3 {
+    background: lightgreen; 
+    width: 100px;
+    height: 100px; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation-name: sqanimation3;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;  
+}
+.box4 {
+    background: lightgoldenrodyellow; 
+    width: 100px;
+    height: 100px;
+    position: absolute; 
+    bottom: 0;
+    left: 0; 
+    animation-name: sqanimation4;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+/* .box1, .box2, .box3, .box4 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation-name: sqanimation;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+} */
+/* box3 */
+@keyframes sqanimation {
+    to {
+        top: 50%;
+        left: 50%;
+        border-radius: 0 0 50% 0;
+        background-color: black;
+    }
+}
+ /* box4 */
+@keyframes sqanimation2 {
+    to {
+        top: 50%;
+        right: 50%;
+        border-radius: 0 0 0 50%;
+        background-color: black;
+    }
+}
+ /* box1 */
+@keyframes sqanimation3 {
+    to {
+        bottom: 50%;
+        right: 50%;
+        border-radius: 50% 0 0 0;
+        background-color: black;
+    }
+}
+    /* box2 */
+@keyframes sqanimation4 {
+    to {
+        bottom: 50%;
+        left: 50%;
+        border-radius: 0 50% 0 0;
+        background-color: black;
+    }
+}
+
